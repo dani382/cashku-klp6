@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Palette */
+:root{
+    --btn-clr : rgba(13, 202, 240);
+    --nav-clr : #EBEBEB;
+    --wht-clr : #ffffff;
+    --blu-clr : #073949;
+}
+
+/* Body */
+body{
+    font-family: 'Poppins';
+    color: var(--wht-clr);
+}
+
+/* Navbar */
+nav{
+    background-color: var(--nav-clr);
+    width: 100%;
+    height: 88px;
+}
+.navbar-brand{
+    font-weight: 600;
+    font-style: italic;
+}
+.nav-link{
+    font-weight: 700;
+}
+.nav-link:hover{
+    font-weight: 700;
+    color: var(--wht-clr);
+}
+.button-primary{
+    width: 120px;
+    height: 36px;
+    background-color: var(--wht-clr);
+    font-weight: 600;
+    color: var(--blu-clr);
+    border: none;
+    border-radius: 8px;
+}
+.button-primary:hover{
+    width: 120px;
+    height: 36px;
+    background-color: var(--wht-clr);
+    font-weight: 600;
+    color: var(--blu-clr);
+    border: 2px solid var(--btn-clr);
+    border-radius: 8px;
+}
+.button-secondary{
+    width: 120px;
+    height: 36px;
+    background-color: var(--btn-clr);
+    font-weight: 600;
+    color: var(--wht-clr);
+    border: none;
+    border-radius: 8px;
+}
+.button-secondary:hover{
+    width: 120px;
+    height: 36px;
+    background-color: var(--wht-clr);
+    font-weight: 600;
+    color: var(--blu-clr);
+    border: 2px solid var(--btn-clr);
+    border-radius: 8px;
+}
+
+/* Konten deskripsi */
+#desc{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0)), url("/assets/bank.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.des{
+    animation: fadeIn 2.5s;
+    -webkit-animation: fadeIn 2.5s;
+}
+
+.desc-tagline h1{
+    width: 90%;
+    font-weight: 600;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.desc-tagline p{
+    width: 90%;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.button-lg-primary{
+    width: 220px;
+    height: 54px;
+    background-color: var(--btn-clr);
+    font-weight: 600;
+    color: var(--wht-clr);
+    border: none;
+    border-radius: 10px;
+}
+.button-lg-primary:hover{
+    width: 220px;
+    height: 54px;
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--wht-clr);
+    border: 3px solid var(--btn-clr);
+    border-radius: 10px;
+}
+.button-lg-secondary{
+    width: 220px;
+    height: 54px;
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--wht-clr);
+    border: none;
+}
+.button-lg-secondary:hover{
+    width: 220px;
+    height: 54px;
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--wht-clr);
+    border: 3px solid var(--btn-clr);
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Screen */
+@media screen and (max-width : 767px){
+    .img{
+        display: none;
+    }
+}
+@media screen and (max-width : 476px) {
+    .navbar-collapse {
+        position: fixed;
+        width: 100%;
+        margin-left: -12px;
+        padding-left: 12px;
+        background-color: var(--btn-clr);
+        margin-top: 245px;
+    }
+    .navbar-collapse > .tombol {
+        width: 100%;
+        height: 50px;
+        padding-top: 5px;
+        text-align: center;
+        background-color: var(--nav-clr);
+    }
+    #desc{
+        padding-top: 110px;
+    }
+    .desc-tagline h1{
+        width: 90%;
+        font-weight: 600;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    .desc-tagline p{
+        width: 90%;
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+    .button-lg-primary{
+        width: 100%;
+        height: 54px;
+        background-color: tra;
+        font-weight: 600;
+        color: var(--wht-clr);
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    .button-lg-primary:hover{
+        width: 100%;
+        height: 54px;
+        background-color: transparent;
+        font-weight: 600;
+        color: var(--wht-clr);
+        border: 3px solid var(--btn-clr);
+        border-radius: 10px;
+    }
+    .button-lg-secondary{
+        width: 100%;
+        height: 54px;
+        background-color: transparent;
+        font-weight: 600;
+        color: var(--wht-clr);
+        border: none;
+    }
+    .button-lg-secondary:hover{
+        width: 100%;
+        height: 54px;
+        background-color: transparent;
+        font-weight: 600;
+        border: 3px solid var(--btn-clr);
+        border-radius: 10px;
+    }
+}
