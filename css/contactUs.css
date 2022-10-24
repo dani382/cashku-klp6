@@ -12,6 +12,7 @@
 /* Body */
 body{
     font-family: 'Poppins';
+    overflow: hidden;
 }
 
 /* Nav */
