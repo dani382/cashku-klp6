@@ -106,11 +106,6 @@ form > button{
     width: 100%;
 }
 /* Responsive Screen */
-@media screen and (max-width : 767px){
-    .img{
-        display: none;
-    }
-}
 @media screen and (max-width : 576px) {
     .navbar-collapse {
         position: fixed;
